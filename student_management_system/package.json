@@ -11,5 +11,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^1.6.5"
-  }
+  },
+  "engines" { "node" : "9",
+  "npm" : "5"
+}
 }
