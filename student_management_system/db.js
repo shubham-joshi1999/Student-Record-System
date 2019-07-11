@@ -30,6 +30,7 @@ function addNewStudent(Roll_Number,name,branch,sgpa)
 {
     return new Promise(function(resolve,reject)
     {
+        connection.query(
         `INSERT INTO students (Roll_Number,name,branch,sgpa) VALUES(?,?,?,?)`,
         [Roll_Number,name,branch,sgpa],
         function(err,results)
@@ -43,6 +44,7 @@ function addNewStudent(Roll_Number,name,branch,sgpa)
                 resolve() ;
             }
         }
+        )
     })
 }
 
