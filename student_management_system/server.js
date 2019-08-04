@@ -11,6 +11,6 @@ srv.use('/',express.static(path.join(__dirname + '/public'))) ;
 
 srv.listen(Server_Port , ()=>
 {
-   // console.log("Server started on http://localhost:1234/") ; 
+   console.log("Server started on http://localhost:1234/") ; 
 })
 
